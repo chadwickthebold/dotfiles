@@ -1,1 +1,1 @@
-/home/chadwickthebold/.vimrc
+set number
