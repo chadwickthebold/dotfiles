@@ -4,9 +4,12 @@
 	"draw_white_space": "all",
 	"ignored_packages":
 	[
-		"Vintage"
+		"Theme - Flatland",
+		"Vintage",
+		"Theme - Phoenix",
+		"Java Velocity"
 	],
-	 "theme": "Soda Dark.sublime-theme",
 	"tab_size": 2,
+	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": false
 }
