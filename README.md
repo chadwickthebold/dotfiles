@@ -8,6 +8,7 @@ What's Included
 * .vimrc
 * Sublime Text 3 preferences
 * Sublime Text snippets
+* Webstorm settings jar
 
 Usage
 -----------------------------
@@ -23,8 +24,6 @@ location.
 
 * .vimrc
   * Symlink this to ~/.vimrc
-  * Copy vim_colors/badwolf.vim to /usr/share/vim/vim73/colors/
-
-
+  * Copy vim_colors/badwolf.vim to ~/.vim/colors
 
 ### Linux
