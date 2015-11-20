@@ -218,7 +218,6 @@ alias ll='ls -FGlAhp'                       # list with descriptive symbols, col
                                             # unit suffixes and directory indication
 alias less='less -FRXc'                     # less with exit-on-one-screen, raw control chars,
                                             # no initialization, and repaint from bottom
-cd() { builtin cd "$@"; ll; }               # Always list directory contents upon 'cd'
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
 alias ...='cd ../../'                       # Go back 2 directory levels
@@ -259,3 +258,19 @@ alias ipInfo0='ipconfig getpacket en0'              # ipInfo0:      Get info on 
 alias ipInfo1='ipconfig getpacket en1'              # ipInfo1:      Get info on connections for en1
 alias openPorts='sudo lsof -i | grep LISTEN'        # openPorts:    All listening connections
 alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rules inc/ blocked IP
+
+
+# -------------------------------------------------
+# -                  Extras                       -
+# -------------------------------------------------
+
+# If there are any custom profile additions, such
+# as NVM, virtualenv, etc., add them to the
+# '.bash_extras' file in your home dir
+
+pwd
+
+if [ -f "$HOME/.bash_extras" ];
+then
+   . $HOME/.bash_extras
+fi
