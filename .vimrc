@@ -26,9 +26,9 @@ let mapleader=","
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set expandtab
 
 filetype plugin on
@@ -42,3 +42,6 @@ set linebreak    "Wrap lines at convenient points
 
 
 colorscheme badwolf
+
+" Set visual 80-char vertical line
+set colorcolumn=80
