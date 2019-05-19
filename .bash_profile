@@ -8,7 +8,6 @@
 export PATH="$PATH:/usr/local/bin/"
 export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="$PATH:/Applications/MAMP/bin/php/php5.3.27/bin:/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin"
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
