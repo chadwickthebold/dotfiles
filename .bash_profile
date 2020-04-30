@@ -269,8 +269,8 @@ alias showBlocked='sudo ipfw list'                  # showBlocked:  All ipfw rul
 
 pwd
 
-if [ -f "$HOME/.bash_extras" ];
+if [ -f "$HOME/.shell_extras" ];
 then
-   . $HOME/.bash_extras
+   . $HOME/.shell_extras
 fi
 

@@ -4,11 +4,12 @@ dotfiles
 What's Included
 -----------------------------
 
-* .bash_profile
-* .vimrc
-* Sublime Text 3 preferences
-* Sublime Text snippets
-* Webstorm settings jar
+* bash
+  - .bash_profile
+* vim
+  - .vimrc
+* zsh
+  - .zshrc
 
 Usage
 -----------------------------
@@ -20,10 +21,14 @@ location.
 ### OSX
 
 * .bash_profile
-  * Symlink this to ~/.bash_profile
+  - Symlink this to ~/.bash_profile
 
 * .vimrc
-  * Symlink this to ~/.vimrc
-  * Copy vim_colors/badwolf.vim to ~/.vim/colors
+  - Symlink this to ~/.vimrc
+  - Copy vim_colors/badwolf.vim to ~/.vim/colors
+
+* .zshrc
+  - Symlink this to ~/.zshrc
 
 ### Linux
+
