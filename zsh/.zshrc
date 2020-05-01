@@ -2,17 +2,23 @@
 #-    my  zch config                   -
 #---------------------------------------
 
-
 #---------------------------------------
 #-  top level stuff                    -
-#--------------------------------------
+#---------------------------------------
+
+# git prerequisites
+source ~/.bash/git-prompt.sh
+zstyle ':completion:*:*:git:*' script ~/.bash/git-completion.bash
+fpath=(~/.zsh $fpath)
 
 # command prompt
 # %B%F{25} - make bold and set foreground color to 25
 #       %2 - show the working directory + its immediate parent
 # %(?.%F{green}√.%F{red}X)%f - show a exit code identifier
+# $(__git_ps1 " (%s)") - show the current git branch
 # %(!.!.>) - show a root privilage identifier
-PROMPT='%(?.%F{green}√.%F{red}X)%f %B%F{25}%2~%f%b %(!.!.>) '
+setopt PROMPT_SUBST;
+PROMPT='%(?.%F{green}√.%F{red}X)%f %B%F{25}%2~%f%b $(__git_ps1 "(%s)") %(!.!.>) '
 
 # Set default blocksize for ls, df, du
 export BLOCKSIZE=1k
@@ -20,15 +26,16 @@ export BLOCKSIZE=1k
 # Enable zsh completions
 autoload -Uz compinit && compinit
 
-#----------------------
-#-     Shortcuts      -
-#----------------------
+#---------------------------------------
+#-     Shortcuts                       -
+#---------------------------------------
 alias c=clear
 
 
-#----------------------
-#-    Git Commands    -
-#----------------------
+#---------------------------------------
+#-    git                              -
+#--------------------------------------
+# useful aliases
 alias g='git'
 alias ga='git add'
 alias gs='git status'
@@ -62,8 +69,7 @@ alias gmd='git merge dev'
 
 alias gbg='git branch | grep '
 
-
-
+# git completion
 # -------------------------------------------------
 # -                  Extras                       -
 # -------------------------------------------------

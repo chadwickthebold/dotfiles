@@ -14,21 +14,36 @@ What's Included
 Usage
 -----------------------------
 
-To use these dotfiles, either checkout this project and symlink the files 
-to their appropriate locations, or download the individual files to the correct
+To use these dotfiles either checkout this project and symlink the files 
+to their appropriate locations or download the individual files to the correct
 location.
 
 ### OSX
 
-* .bash_profile
-  - Symlink this to ~/.bash_profile
+#### zsh
 
-* .vimrc
-  - Symlink this to ~/.vimrc
-  - Copy vim_colors/badwolf.vim to ~/.vim/colors
+1. Symlink bash and zsh dirs to your home folder
+```
+$ ln -s ~/Documents/dev/chadwickthebold/dotfiles/bash ~/.bash
+$ ln -s ~/Documents/dev/chadwickthebold/dotfiles/zsh ~/.zsh
+```
+2. Symlink the `.zshrc` file to the home dir
+```
+$ ln -s ~/Documents/dev/chadwickthebold/dotfiles/zsh/.zshrc ~/.zshrc
+```
 
-* .zshrc
-  - Symlink this to ~/.zshrc
+#### vim
+
+1. Symlink `.vimrc` to the home dir
+```
+$ ln -s ~/Documents/dev/chadwickthebold/dotfiles/vim ~/.vimrc
+```
+2. Copy the `vim_colors/badwolf.vim to ~/.vim/colors
+```
+$ cp ~/Documents/dev/chadwickthebold/dotfiles/vim/vim_colors/badwolf.vim ~/.vim/colors
+```
 
 ### Linux
+
+????
 
