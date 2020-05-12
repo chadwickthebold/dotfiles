@@ -17,6 +17,7 @@ fpath=(~/.zsh $fpath)
 # %(?.%F{green}√.%F{red}X)%f - show a exit code identifier
 # $(__git_ps1 " (%s)") - show the current git branch
 # %(!.!.>) - show a root privilage identifier
+export GIT_PS1_SHOWDIRTYSTATE="true"
 setopt PROMPT_SUBST;
 PROMPT='%(?.%F{green}√.%F{red}X)%f %B%F{25}%2~%f%b $(__git_ps1 "(%s)") %(!.!.>) '
 
