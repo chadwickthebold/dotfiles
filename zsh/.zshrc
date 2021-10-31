@@ -12,9 +12,9 @@ zstyle ':completion:*:*:git:*' script ~/.bash/git-completion.bash
 fpath=(~/.zsh $fpath)
 
 # command prompt
+# %(?.%F{green}√.%F{red}X)%f - show a exit code identifier
 # %B%F{25} - make bold and set foreground color to 25
 #       %2 - show the working directory + its immediate parent
-# %(?.%F{green}√.%F{red}X)%f - show a exit code identifier
 # $(__git_ps1 " (%s)") - show the current git branch
 # %(!.!.>) - show a root privilage identifier
 export GIT_PS1_SHOWDIRTYSTATE="true"
@@ -36,7 +36,6 @@ alias c=clear
 #---------------------------------------
 #-    git                              -
 #--------------------------------------
-# useful aliases
 alias g='git'
 alias ga='git add'
 alias gs='git status'

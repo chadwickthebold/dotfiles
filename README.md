@@ -18,7 +18,7 @@ To use these dotfiles either checkout this project and symlink the files
 to their appropriate locations or download the individual files to the correct
 location.
 
-### OSX
+### MacOS
 
 #### zsh
 
