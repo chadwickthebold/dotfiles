@@ -36,7 +36,7 @@ $ ln -s ~/Documents/dev/chadwickthebold/dotfiles/zsh/.zshrc ~/.zshrc
 
 1. Symlink `.vimrc` to the home dir
 ```
-$ ln -s ~/Documents/dev/chadwickthebold/dotfiles/vim ~/.vimrc
+$ ln -s ~/Documents/dev/chadwickthebold/dotfiles/vim/.vimrc ~/.vimrc
 ```
 2. Copy the `vim_colors/badwolf.vim to ~/.vim/colors
 ```

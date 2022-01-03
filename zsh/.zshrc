@@ -31,7 +31,9 @@ autoload -Uz compinit && compinit
 #-     Shortcuts                       -
 #---------------------------------------
 alias c=clear
-
+# Colorized ls output by default
+alias ls='ls -G'
+alias ll='ls -lG'
 
 #---------------------------------------
 #-    git                              -
